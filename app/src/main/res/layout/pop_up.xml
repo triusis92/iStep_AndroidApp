@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/cglName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="Name your goal..."
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/cglDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="Days to reach goal..."
+            android:inputType="number"
+            android:layout_below="@+id/cglTarget"
+            android:layout_alignStart="@+id/cglTarget" />
+
+        <EditText
+            android:id="@+id/cglTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/cglName"
+            android:layout_below="@+id/cglRadioGroup"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:hint="Number to reach.."
+            android:inputType="numberDecimal" />
+
+        <RadioGroup
+            android:id="@+id/cglRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/cglName"
+            android:layout_alignStart="@+id/cglName"
+            android:layout_marginStart="40dp">
+
+            <RadioButton
+                android:id="@+id/cglSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Steps" />
+
+            <RadioButton
+                android:id="@+id/cglCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Calories" />
+
+            <RadioButton
+                android:id="@+id/cglKilometers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kilometers" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/cglCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/round_edges"
+            android:layout_below="@+id/cglDays"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</LinearLayout>

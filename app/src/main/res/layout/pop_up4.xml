@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Group Management"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:layout_height="50dp"
+        android:id="@+id/textView3" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_weight="0.00">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText6"
+            android:layout_weight="1"
+            android:hint="Group Name.." />
+
+        <Button
+            android:text="Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:id="@+id/button13" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Create a Group Goal"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="43dp"
+        android:textAlignment="center"
+        android:id="@+id/textView12" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText11"
+        android:hint="Enter Goal Name.." />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText12"
+            android:hint="Number to Reach.." />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:spinnerMode="dialog"
+            android:id="@+id/spinner2" />
+    </LinearLayout>
+
+    <RadioButton
+        android:text="Daily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton6"
+        android:layout_weight="0.05" />
+
+    <RadioButton
+        android:text="Weekly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton9"
+        android:layout_weight="0.05" />
+
+    <RadioButton
+        android:text="Monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioButton10"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:text="Create"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:id="@+id/button14" />
+
+    <TextView
+        android:text="Search User"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_height="65dp"
+        android:id="@+id/textView13" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText13"
+        android:hint="Enter user Name.." />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <Button
+            android:text="Remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button15"
+            android:layout_weight="0.37" />
+
+        <Button
+            android:text="Promote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button16"
+            android:layout_weight="0.33" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <Button
+            android:text="Delete Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button18"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>
